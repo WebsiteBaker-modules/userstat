@@ -17,7 +17,6 @@
 
 div.userstat thead { 
 	background-color: #C7D1DB;
-	color:#000;
 }
 
 div.userstat thead td {
@@ -26,17 +25,4 @@ div.userstat thead td {
 
 div.userstat tr.even {
 	background-color: #EEEEF0; 
-}
-
-div.userstat tr.even_inactive {
-	background-color: #EEEEF0; 
-	
-}
-
-div.userstat tr.inactive {
-	color:#CCC;
-}
-
-div.userstat tr.inactive td, div.userstat tr.even_inactive td {
-color:#999;
 }

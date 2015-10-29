@@ -7,19 +7,17 @@
 <table border="0" cellpadding="1" cellspacing="0" width="98%">
 	<thead>
 	<tr>
-    	<th width="8%"><a href="?tool=userstat&list=active">{TXT_TH_ACTIVE}</a></th>
-		<th width="25%"><a href="?tool=userstat&list=user">{TXT_TH_USER}</a></th>
-		<th width="18%"><a href="?tool=userstat&list=last_check">{TXT_TH_LAST_LOGIN}</a></th>
+		<th width="25%">{TXT_TH_USER}</th>
+		<th width="20%">{TXT_TH_LAST_LOGIN}</th>
 		<th width="10%">{TXT_TH_DAYS_INACTIVE}</th>
-		<th width="10%">{TXT_TH_LAST_IP}</th>
-		<th width="21%">{TXT_TH_IP_CHECK}</th>
-		<th width="6%">{TXT_TH_EMAIL}</th>
+		<th width="12%">{TXT_TH_LAST_IP}</th>
+		<th width="23%">{TXT_TH_IP_CHECK}</th>
+		<th width="8%">{TXT_TH_EMAIL}</th>
 	</tr>
 	</thead>
 	
 	<!-- BEGIN user_list -->
 	<tr {TR_CLASS}>
-    	<td>{ACTIVE}</td>
 		<td>{USERNAME}</td>
 		<td>{LAST_LOGIN}</td>
 		<td>{DAYS_INACTIVE}</td>

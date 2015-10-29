@@ -28,7 +28,6 @@ $LANG[0] = array(
 	'TXT_HEADING'			=> 'User statistics',
 	'TXT_DESCRIPTION'		=> 'The table provides a list of registered WB users, and the date of their last login.',
 	'TXT_TH_USER'			=> 'User',
-	'TXT_TH_ACTIVE'			=> 'Active',
 	'TXT_TH_LAST_LOGIN'		=> 'Last login',
 	'TXT_TH_DAYS_INACTIVE'	=> 'In days',
 	'TXT_TH_LAST_IP'		=> 'Last IP',
@@ -48,8 +47,6 @@ $LANG[0] = array(
 	'TXT_AP'				=> 'AP',
 	'TXT_AP_COUNTRIES'		=> 'APNic - Asia and Pacific Regions',
 	// date format (see PHP date function for information)
-	'DATE_FORMAT'			=> 'm/d/y | h:i',
-	'TXT_NO' 				=> 'No',
-	'TXT_YES'				=> 'Yes'
+	'DATE_FORMAT'			=> 'm/d/y | h:i'
 );
 ?>

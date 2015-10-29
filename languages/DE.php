@@ -28,7 +28,6 @@ $LANG[0] = array(
 	'TXT_HEADING'			=> 'Benutzerstatistik',
 	'TXT_DESCRIPTION'		=> 'Nachfolgende Liste gibt die registrierten Benutzer, sowie deren letzten Login aus.',
 	'TXT_TH_USER'			=> 'Benutzer',
-	'TXT_TH_ACTIVE'			=> 'Active',
 	'TXT_TH_LAST_LOGIN'		=> 'Letzter Login',
 	'TXT_TH_DAYS_INACTIVE'	=> 'In Tagen',
 	'TXT_TH_LAST_IP'		=> 'Letzte IP',
@@ -48,8 +47,6 @@ $LANG[0] = array(
 	'TXT_AP'				=> 'AP',
 	'TXT_AP_COUNTRIES'		=> 'APNic - Asia and Pacific Regions',
 	// date format (see PHP date function for information)
-	'DATE_FORMAT'			=> 'd.m.y | H:i',
-	'TXT_NO' 				=> 'Geen',
-	'TXT_YES'				=> 'Ja'
+	'DATE_FORMAT'			=> 'd.m.y | H:i'
 );
 ?>
