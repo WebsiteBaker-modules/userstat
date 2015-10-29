@@ -1,0 +1,45 @@
+<div class="userstat">
+
+<h2>{TXT_HEADING}</h2>
+<p>{TXT_MESSAGE}</p>  
+
+<!-- BEGIN user_table -->
+<table border="0" cellpadding="1" cellspacing="0" width="98%">
+	<thead>
+	<tr>
+    	<th width="8%"><a href="?tool=userstat&list=active">{TXT_TH_ACTIVE}</a></th>
+		<th width="25%"><a href="?tool=userstat&list=user">{TXT_TH_USER}</a></th>
+		<th width="18%"><a href="?tool=userstat&list=last_check">{TXT_TH_LAST_LOGIN}</a></th>
+		<th width="10%">{TXT_TH_DAYS_INACTIVE}</th>
+		<th width="10%">{TXT_TH_LAST_IP}</th>
+		<th width="21%">{TXT_TH_IP_CHECK}</th>
+		<th width="6%">{TXT_TH_EMAIL}</th>
+	</tr>
+	</thead>
+	
+	<!-- BEGIN user_list -->
+	<tr {TR_CLASS}>
+    	<td>{ACTIVE}</td>
+		<td>{USERNAME}</td>
+		<td>{LAST_LOGIN}</td>
+		<td>{DAYS_INACTIVE}</td>
+		<td>{LAST_IP}</td>
+		<td>
+			<a href="http://www.ripe.net/perl/whois?searchtext={LAST_IP}" target="_blank" 
+			title="{TXT_RI_COUNTRIES}">{TXT_RI}</a> |
+			<a href="http://lacnic.net/cgi-bin/lacnic/whois?query={LAST_IP}" target="_blank" 
+			title="{TXT_LAC_COUNTRIES}">{TXT_LAC}</a> |
+			<a href="http://ws.arin.net/cgi-bin/whois.pl?queryinput={LAST_IP}" target="_blank" 
+			title="{TXT_AR_COUNTRIES}">{TXT_AR}</a> |
+			<a href="http://www.afrinic.net/cgi-bin/whois?searchtext={LAST_IP}" target="_blank" 
+			title="{TXT_AF_COUNTRIES}">{TXT_AF}</a> |
+			<a href="http://www.apnic.net/apnic-bin/whois2.pl?searchtext={LAST_IP}" target="_blank" 
+			title="{TXT_AP_COUNTRIES}">{TXT_AP}</a>
+		</td>
+		<td><a href="mailto:{USER_EMAIL}" title="{USER_EMAIL}">{TXT_MAILTO}</a></td>
+	</tr>
+	<!-- END user_list -->
+</table>
+<!-- END user_table -->
+
+</div>

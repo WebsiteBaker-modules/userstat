@@ -1,0 +1,42 @@
+/**
+ * Admin tool: User Statistics
+ *
+ * This admin tool provides details about registered Website Baker
+ * users from the Website Baker users database table.
+ *
+ * This file contains the CSS definitions for the backend.
+ * 
+ * LICENSE: GNU General Public License 3.0
+ * 
+ * @author		Christian Sommer
+ * @copyright	Christian Sommer (c) 2006-2009
+ * @license		http://www.gnu.org/licenses/gpl.html
+ * @version		0.30
+ * @platform	Website Baker 2.7
+*/
+
+div.userstat thead { 
+	background-color: #C7D1DB;
+	color:#000;
+}
+
+div.userstat thead td {
+	font-weight: bold; 
+}
+
+div.userstat tr.even {
+	background-color: #EEEEF0; 
+}
+
+div.userstat tr.even_inactive {
+	background-color: #EEEEF0; 
+	
+}
+
+div.userstat tr.inactive {
+	color:#CCC;
+}
+
+div.userstat tr.inactive td, div.userstat tr.even_inactive td {
+color:#999;
+}
