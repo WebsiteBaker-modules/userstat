@@ -18,6 +18,16 @@
 * ------------------------------------------------------------------------------------------------
 *	MODULE VERSION HISTORY
 * ------------------------------------------------------------------------------------------------
+User Statistics 0.32.zip
+*       v0.32 stable (evaki: Sep 15, 2012)
+*       + fixed E_STRICT-Notice in tool.php [function.mktime] (since php 5.1) changed to time()
+*
+*       v0.31 stable (Xagone: May 03, 2009)
+*       + added french language
+*       + added active status
+*       + grayed out inactive users
+*       + now able to order by active status, username, or last login
+*
 *	v0.30 stable (doc: Mar 13, 2009)
 *	+ updated module according guidelines introduced in the "Module Primer"
 *	+ removed support for WB 2.6.x (only supports WB 2.7 or higher)
