@@ -100,7 +100,7 @@ array(
 'TR_CLASS'		=> $TR_CLASS,
 'USERNAME'		=> htmlentities(ucwords($row['username'])),
 'LAST_LOGIN'	=> date((($row['login_when'] == 0) ? '-' : $LANG[0]['DATE_FORMAT']), (int) $row['login_when']),
-'DAYS_INACTIVE'	=> ($row['login_when'] == 0) ? '-' : round((mktime() - (int) $row['login_when']) / (3600 * 24)),
+'DAYS_INACTIVE'	=> ($row['login_when'] == 0) ? '-' : round((time() - (int) $row['login_when']) / (3600 * 24)),
 'LAST_IP'		=> htmlentities($row['login_ip']),
 'USER_EMAIL'	=> htmlentities($row['email']),
 'ACTIVE'	=> ($row['active']) ? $LANG[0]['TXT_YES'] : $LANG[0]['TXT_NO']
