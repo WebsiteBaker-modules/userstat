@@ -1,0 +1,37 @@
+<div class="userstat">
+
+<h2>{TXT_HEADING}</h2>
+<p>{TXT_MESSAGE}</p>
+
+<form name='userstat' method='post' action='{ACTION_URL}'>
+<!-- BEGIN user_table -->
+<table style="width:100%;" class="userstats">
+        <thead>
+        <tr>
+
+                <th width="10%"><button class="useractive {ACTIVESORTCSS}" type="submit" name="{ACTIVESORT}" value="{ACTIVESORT}">{TXT_ACTIVE}</button></th>
+                <th width="20%">
+                <button class="usersort {USERSORTCSS}" type="submit" name="{USERSORT}" value="{USERSORT}">{TXT_TH_USER}</button>
+            </th>
+                <th width="20%">{TXT_TH_LAST_LOGIN}</th>
+                <th width="20%"><button class="timesort {TIMESORTCSS}" type="submit" name="{TIMESORT}" value="{TIMESORT}">{TXT_TH_DAYS_INACTIVE}</button></th>
+                <th width="20%"><button class="groupsort {GROUPSORTCSS}" type="submit" name="{GROUPSORT}" value="{GROUPSORT}">{TXT_TH_GROUPS}</button></th>
+                <th width="10%">{TXT_TH_EMAIL}</th>
+        </tr>
+        </thead>
+
+        <!-- BEGIN user_list -->
+        <tr class="{UserActiveCSS} {SuperUserCSS}">
+            <td style="text-align:center;">{ACTIVE}</td>
+            <td>{DISPLAYNAME} <span class="username">({USERNAME})</span></td>
+            <td>{LAST_LOGIN}</td>
+            <td>{DAYS_INACTIVE}</td>
+            <td>{USERGROUP}</td>
+            <td><a href="mailto:{USER_EMAIL}" title="{USER_EMAIL}">{TXT_MAILTO}</a></td>
+        </tr>
+        <!-- END user_list -->
+</table>
+</form>
+<!-- END user_table -->
+
+</div>

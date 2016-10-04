@@ -1,28 +1,20 @@
 /**
- * Admin tool: User Statistics
  *
- * This admin tool provides details about registered Website Baker
- * users from the Website Baker users database table.
+/**
+ * @category     Addons
+ * @package      Admin tool: User Statistics
+ * @copyright    Uwe Jacobsen <webdesign@jacobi22.com>, Christian Sommer, Evaki
+ * @author       Uwe Jacobsen <webdesign@jacobi22.com>, Christian Sommer, Evaki
+ * @license      http://www.gnu.org/licenses/gpl.html   GPL License
+ * @version      1.0.3
+ * @lastmodified $Date: $
+ * @since        File available since 2016-03-24
+ * @description  settings for wysiwyg editor
  *
- * This file contains the CSS definitions for the backend.
- * 
- * LICENSE: GNU General Public License 3.0
- * 
- * @author		Christian Sommer
- * @copyright	Christian Sommer (c) 2006-2009
- * @license		http://www.gnu.org/licenses/gpl.html
- * @version		0.30
- * @platform	Website Baker 2.7
+/**
+ * backend.css
 */
 
-div.userstat thead { 
-	background-color: #C7D1DB;
-}
 
-div.userstat thead td {
-	font-weight: bold; 
-}
-
-div.userstat tr.even {
-	background-color: #EEEEF0; 
-}
+/* switch path to default or oldstyle */
+@import url("themes/default/css/backend_default.css");

@@ -1,55 +1,45 @@
 <?php
 /**
- * Admin tool: User Statistics
  *
- * This admin tool provides details about registered Website Baker
- * users from the Website Baker users database table.
+/**
+ * @category     Addons
+ * @package      Admin tool: User Statistics
+ * @copyright    Uwe Jacobsen <webdesign@jacobi22.com>, Dietrich Roland Pehlke
+ * @author       Uwe Jacobsen <webdesign@jacobi22.com>, Dietrich Roland Pehlke
+ * @license      http://www.gnu.org/licenses/gpl.html   GPL License
+ * @version      1.0.3
+ * @lastmodified $Date: $
+ * @since        File available since 2016-03-24
+ * @description  french language file for wysiwyg editor
  *
- * This file contains the English language output.
- * 
- * LICENSE: GNU General Public License 3.0
- * 
- * @author		Christian Sommer
- * @copyright	Christian Sommer (c) 2006-2009
- * @license		http://www.gnu.org/licenses/gpl.html
- * @version		0.30
- * @platform	Website Baker 2.7
-*/
+/**
+ * FR.php
+/* -------------------------------------------------------- */
+// Must include code to stop this file being accessed directly
+if(defined('WB_PATH') == false) { die('Illegale file access /'.basename(__DIR__).'/'.basename(__FILE__).''); }
+/* -------------------------------------------------------- */
 
-// German module description
+// french module description
+
 $module_description = 'This module creates a list of registered users with their last login details.';
 
-// declare module language array
-$LANG = array();
-
-// Text outputs for the module backend ("htt/backend_view.htt")
-$LANG[0] = array(
-	// normal text outputs
-	'TXT_HEADING'			=> 'Statistiques utilisateur',
-	'TXT_DESCRIPTION'		=> 'The table provides a list of registered WB users, and the date of their last login.',
-	'TXT_TH_USER'			=> 'Utilisateur',
-	'TXT_TH_ACTIVE'			=> 'Actif',
-	'TXT_TH_LAST_LOGIN'		=> 'Derni&egrave;re connexion',
-	'TXT_TH_DAYS_INACTIVE'	=> 'Depuis (jours)',
-	'TXT_TH_LAST_IP'		=> 'Dernier IP',
-	'TXT_TH_IP_CHECK'		=> 'IP check',
-	'TXT_TH_EMAIL'			=> 'Courriel',
-	'TXT_ERROR_DATABASE'	=> 'Database error. Unable to fetch user statistics from database.',
-	'TXT_MAILTO'			=> 'Mailto',
-	// text outputs for the IP check
-	'TXT_RI'				=> 'RI',
-	'TXT_RI_COUNTRIES'		=> 'Ripe - (Europe, Middle East, Parts of Africa and Asia)',
-	'TXT_LAC'				=> 'LAC',
-	'TXT_LAC_COUNTRIES'		=> 'LacNic - Latin America and Carribean region',
-	'TXT_AR'				=> 'AR',
-	'TXT_AR_COUNTRIES'		=> 'ARIN - North America, parts of Carribean and Saharan Africa',
-	'TXT_AF'				=> 'AF',
-	'TXT_AF_COUNTRIES'		=> 'AfriNic - Africa',
-	'TXT_AP'				=> 'AP',
-	'TXT_AP_COUNTRIES'		=> 'APNic - Asia and Pacific Regions',
-	// date format (see PHP date function for information)
-	'DATE_FORMAT'			=> 'm/d/y | h:i',
-	'TXT_NO' 				=> 'Non',
-	'TXT_YES'				=> 'Oui'
-);
-?>
+        // normal text outputs
+$MOD_USERSTATS['TXT_HEADING'] = 'Statistiques utilisateur';
+$MOD_USERSTATS['TXT_DESCRIPTION'] = 'The table provides a list of registered WB users, and the date of their last login.';
+$MOD_USERSTATS['TXT_TH_USER'] = 'Utilisateur';
+$MOD_USERSTATS['TXT_TH_EMAIL'] = 'Courriel';
+$MOD_USERSTATS['TXT_TH_LAST_LOGIN'] = 'Derni&egrave;re connexion';
+$MOD_USERSTATS['TXT_TH_DAYS_INACTIVE'] = 'Depuis (jours) ';
+$MOD_USERSTATS['TXT_ERROR_DATABASE'] = 'Database error. Unable to fetch user statistics from database.';
+$MOD_USERSTATS['TXT_MAILTO'] = 'email to';
+$MOD_USERSTATS['TXT_ACTIVE'] = 'account is';
+$MOD_USERSTATS['TXT_HOURS']  = 'hours ago';
+$MOD_USERSTATS['TXT_MINUTES'] = 'minutes ago';
+$MOD_USERSTATS['TXT_DAYS'] = 'days ago';
+$MOD_USERSTATS['TXT_VOR'] = '';
+$MOD_USERSTATS['TXT_AT'] = ' at ';
+$MOD_USERSTATS['ACC_ACTIVE'] = 'active';
+$MOD_USERSTATS['ACC_INACTIVE'] = 'inactive';
+$MOD_USERSTATS['TXT_TH_GROUPS'] = 'Group';
+        // date format (see PHP date function for information)
+$MOD_USERSTATS['DATE_FORMAT'] = 'd.m.Y | H:i';

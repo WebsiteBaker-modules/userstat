@@ -1,0 +1,64 @@
+
+
+div.userstat thead {
+        background-color: #C7D1DB;
+}
+
+div.userstat thead td {
+        font-weight: bold;
+}
+
+.username {font-size:80%; color:#808080;}
+table.userstats tr td {padding:4px}
+table.userstats tr.inactive {background-color:#FFEEEE;}
+table.userstats tr.even {background-color:#EEEEF0;}
+table.userstats tr.aeven {background-color:#FFFFFF;}
+table.userstats tr.active {background-color:#F0FFF0;}
+table.userstats tr.inactive td {color:#808080;}
+
+button.usersort ,
+button.timesort,
+button.useractive,
+button.groupsort {
+        border: 1px solid #0080C0;
+        background: none;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0 16px 0 0;
+        margin: 0 2px 0 2px;
+}
+button.usersort,button.timesort,
+button.useractive,
+button.groupsort {
+        width: auto;
+        overflow: visible;
+        text-align: left;
+}
+
+button.usersort,button.timesort,
+button.useractive,
+button.groupsort {
+        text-align: right;
+}
+button.usersort.indiff  { background: url("../images/indiff.gif") no-repeat right center }
+
+button.usersort.asc  { background: url("../images/desc.gif") no-repeat right center }
+
+button.usersort.desc  { background: url("../images/asc.gif") no-repeat right center }
+
+button.timesort.indiff  { background: url("../images/indiff.gif") no-repeat right center }
+
+button.timesort.asc  { background: url("../images/desc.gif") no-repeat right center }
+
+button.timesort.desc  { background: url("../images/asc.gif") no-repeat right center }
+button.useractive.indiff  { background: url("../images/indiff.gif") no-repeat right center }
+
+button.useractive.asc  { background: url("../images/desc.gif") no-repeat right center }
+
+button.useractive.desc  { background: url("../images/asc.gif") no-repeat right center }
+
+button.groupsort.indiff  { background: url("../images/indiff.gif") no-repeat right center }
+
+button.groupsort.asc{ background: url("../images/desc.gif") no-repeat right center }
+
+button.groupsort.desc  { background: url("../images/asc.gif") no-repeat right center }
