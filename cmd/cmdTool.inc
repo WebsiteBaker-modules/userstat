@@ -121,8 +121,8 @@ if(defined('WB_PATH') == false) { die('Illegale file access /'.basename(__DIR__)
            $bOnlineTime = ( $sOnlineTime == 0 ) ? $sLastLogin : $sOnlineTime;
         // replace dynamic template placeholders with values from database
            $oTpl->set_var(array(
-                   'DISPLAYNAME'   => htmlentities(ucwords($row['display_name'])),
-                     'USERNAME'   => htmlentities(($row['username'])),
+                     'DISPLAYNAME'   => $row['display_name'],
+                     'USERNAME'   => $row['username'],
                      'LAST_LOGIN'    => date((($row['login_when'] == 0) ? '-' : $MOD_USERSTATS['DATE_FORMAT']), (int) $row['login_when']),
                      'LAST_LOGIN_SINCE' => $sLastLogin,
                      'DAYS_INACTIVE' => $bOnlineTime,

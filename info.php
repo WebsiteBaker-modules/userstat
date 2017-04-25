@@ -19,7 +19,7 @@
 $module_directory       = 'userstat';
 $module_name            = 'User Statistics';
 $module_function        = 'tool';
-$module_version         = '1.0.3';
+$module_version         = '1.0.4';
 $module_platform        = '2.8.3-SP6';
 $module_author          = 'Jacobi22, Christian Sommer';
 $module_license         = '<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public Licencse 3.0</a>';

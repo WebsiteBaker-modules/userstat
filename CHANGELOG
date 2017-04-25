@@ -1,6 +1,10 @@
  * -----------------------------------------------------------------------------------------
  *        MODULE VERSION HISTORY
  * -----------------------------------------------------------------------------------------
+ *        v1.0.4 stable (jacobi22: 25.01.2017)
+          + fix specialchars problem in displayname && Username (thx to Blueeyes007)
+          + add tool icon to show in AdminTools (WB 2.8.3 SP7 + Patch)
+
  *        v1.0.3 stable (jacobi22: 19.04.2016)
           + fix Output array (show Notice in PHP 5.3.28 - thx to hgs)
           + add sortable Groups
